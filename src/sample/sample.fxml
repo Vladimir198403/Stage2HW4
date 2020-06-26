@@ -1,0 +1,19 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+
+
+    <TextField fx:id="textField" promptText="Введите сообщение" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Button fx:id="button" text="Отправить" GridPane.rowIndex="2" GridPane.columnIndex="1" onAction="#clickButtonSend"/>
+
+    <TextArea fx:id="textArea" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+</GridPane>
